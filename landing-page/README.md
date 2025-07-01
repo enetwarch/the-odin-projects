@@ -1,4 +1,4 @@
-### [Landing Page](https://www.theodinproject.com/lessons/foundations-landing-page)
+# [Landing Page](https://www.theodinproject.com/lessons/foundations-landing-page)
 
 Don’t forget to commit early & often! You can [reference the Commit Message lesson](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/commit-messages)!
 
