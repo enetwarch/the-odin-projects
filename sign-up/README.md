@@ -1,4 +1,4 @@
-### [Sign Up Form](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
+# [Sign Up Form](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
 
 #### [Step 1: Set up and planning](#step-1-set-up-and-planning)
 

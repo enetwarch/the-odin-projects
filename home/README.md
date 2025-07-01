@@ -1,4 +1,4 @@
-### [Homepage](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-homepage)
+# [Homepage](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-homepage)
 
 #### [Step 1: Set up and planning](#step-1-set-up-and-planning)
 

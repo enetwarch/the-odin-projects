@@ -1,4 +1,4 @@
-### [Admin Dashboard](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard#step-1-set-up-and-planning)
+# [Admin Dashboard](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard#step-1-set-up-and-planning)
 
 #### [Step 1: Set up and planning](#step-1-set-up-and-planning)
 
