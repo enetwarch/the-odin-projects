@@ -2,8 +2,7 @@ name: Format and lint codebase
 
 on: 
   push:
-    branches-ignore:
-      - 'gh-pages'
+    branches-ignore: ['gh-pages']
 
 jobs:
   check:

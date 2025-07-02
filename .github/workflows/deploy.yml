@@ -1,8 +1,8 @@
-name: GitHub Pages Deployment
+name: GitHub Pages deployment
 
 on:
   push:
-    branches: [main]
+    branches: [ $default-branch ]
 
 jobs:
   deploy:
