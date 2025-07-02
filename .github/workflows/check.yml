@@ -1,8 +1,8 @@
 name: Format and lint codebase
 
-on: 
+on:
   push:
-    branches-ignore: ['gh-pages']
+    branches-ignore: ["gh-pages"]
 
 jobs:
   check:
@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
+          cache: "pnpm"
 
       - name: Install dependencies
         run: pnpm install

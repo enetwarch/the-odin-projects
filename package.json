@@ -5,7 +5,8 @@
   "scripts": {
     "format": "pnpm exec prettier --write .",
     "lint": "pnpm exec eslint --fix .",
-    "check": "pnpm format && pnpm lint"
+    "check": "pnpm exec prettier --check . && pnpm lint",
+    "fix": "pnpm format && pnpm lint"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
