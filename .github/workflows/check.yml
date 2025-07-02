@@ -1,7 +1,9 @@
-name: Format and lint codebase
+name: Perform pnpm check on the codebase
 
 on:
   push:
+    branches-ignore: ["gh-pages"]
+  pull_request:
     branches-ignore: ["gh-pages"]
 
 jobs:
