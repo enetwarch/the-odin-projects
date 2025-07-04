@@ -5,6 +5,8 @@
   --transition-delay: 0.25s;
   --color-background: #f9faf8;
   --color-foreground: #1f2937;
+  --color-surface: #e5e7eb;
+  --color-surface-foreground: #1f2937;
   --color-primary: #3882f6;
   --color-primary-foreground: #f9faf8;
   --color-secondary: #1f2937;
@@ -281,7 +283,7 @@ li {
 
 .quote {
   align-items: center;
-  background-color: #e5e7eb;
+  background-color: var(--color-surface);
   display: flex;
   justify-content: center;
   padding: 7rem;
@@ -299,7 +301,7 @@ li {
 }
 
 .quote__block-quote {
-  color: var(--color-foreground);
+  color: var(--color-surface-foreground);
   font-size: 36px;
   font-style: italic;
   font-weight: 300;
@@ -307,6 +309,7 @@ li {
 
 .quote__citation {
   align-items: center;
+  color: var(--color-surface-foreground);
   display: flex;
   font-size: 24px;
   font-style: normal;
