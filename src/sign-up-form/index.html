@@ -19,21 +19,21 @@
     <aside class="splash">
       <header class="splash__header">
         <img
-          class="splash__logo"
+          class="splash__header-logo"
           src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
           aria-hidden="true"
         />
-        <h1 class="splash__heading-text">ODIN</h1>
+        <h1 class="splash__header-text">ODIN</h1>
       </header>
       <footer class="splash__footer">
         <p class="splash__footer-text">
           <span class="splash__footer-span">Photo by </span>
-          <a class="splash__link" href="https://unsplash.com/@haliewestphoto" target="_blank" rel="noreferrer"
+          <a class="splash__footer-link" href="https://unsplash.com/@haliewestphoto" target="_blank" rel="noreferrer"
             >Halie West</a
           >
           <span class="splash__footer-span"> on </span>
           <a
-            class="splash__link"
+            class="splash__footer-link"
             href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
             target="_blank"
             rel="noreferrer"
@@ -43,47 +43,54 @@
       </footer>
     </aside>
     <main class="main">
-      <form id="sign-up-form" class="form">
+      <form id="sign-up-form" class="form" data-submit="false">
         <header class="form__header">
-          <p class="form__header-text">
-            This is not a real online service! You know you need something like this in your life to help realize your
-            deepest dreams. Sign up <em class="form__header-text--italic">now</em> to get started.
-          </p>
-          <p class="form__header-text">You <em class="form__header-text--italic">know</em> you want to.</p>
+          <div class="form__header-container">
+            <p class="form__header-text">
+              This is not a real online service! You know you need something like this in your life to help realize your
+              deepest dreams. <br />
+              Sign up <em class="form__header-text--italic">now</em> to get started.
+            </p>
+            <p class="form__header-text">You <em class="form__header-text--italic">know</em> you want to.</p>
+          </div>
         </header>
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Let's do this!</legend>
-          <div class="form__field">
-            <label class="form__label" for="first-name">FIRST NAME</label>
-            <input id="first-name" class="form__input" name="first-name" type="text" required />
-          </div>
-          <div class="form__field">
-            <label class="form__label" for="last-name">LAST NAME</label>
-            <input id="last-name" class="form__input" name="last-name" type="text" required />
-          </div>
-          <div class="form__field">
-            <label class="form__label" for="email">EMAIL</label>
-            <input id="email" class="form__input" name="email" type="email" required />
-          </div>
-          <div class="form__field">
-            <label class="form__label" for="phone-number">PHONE NUMBER</label>
-            <input id="phone-number" class="form__input" name="phone-number" type="tel" required />
-          </div>
-          <div class="form__field">
-            <label class="form__label" for="password">PASSWORD</label>
-            <input id="password" class="form__input" name="password" type="password" required />
-          </div>
-          <div class="form__field">
-            <label class="form__label" for="confirm-password">CONFIRM PASSWORD</label>
-            <input id="confirm-password" class="form__input" name="confirm-password" type="password" required />
+          <h2 class="form__fieldset-heading">Let's do this!</h2>
+          <div class="form__fieldset-container">
+            <div class="form__field">
+              <label class="form__label" for="first-name">FIRST NAME</label>
+              <input id="first-name" class="form__input" name="first-name" type="text" required />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="last-name">LAST NAME</label>
+              <input id="last-name" class="form__input" name="last-name" type="text" required />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="email">EMAIL</label>
+              <input id="email" class="form__input" name="email" type="email" required />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="phone-number">PHONE NUMBER</label>
+              <input id="phone-number" class="form__input" name="phone-number" type="tel" required />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="password">PASSWORD</label>
+              <input id="password" class="form__input" name="password" type="password" required />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="confirm-password">CONFIRM PASSWORD</label>
+              <input id="confirm-password" class="form__input" name="confirm-password" type="password" required />
+            </div>
           </div>
         </fieldset>
         <footer class="form__footer">
-          <button class="form__footer-button" type="submit">Create Account</button>
-          <p class="form__footer-text">
-            Already have an account?
-            <a class="form__footer-link" href="./">Log in</a>
-          </p>
+          <div class="form__footer-container">
+            <button class="form__footer-button" type="submit">Create Account</button>
+            <p class="form__footer-text">
+              Already have an account?
+              <a class="form__footer-link" href="./">Log in</a>
+            </p>
+          </div>
         </footer>
       </form>
     </main>
