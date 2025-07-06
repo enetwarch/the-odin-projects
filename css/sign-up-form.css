@@ -89,9 +89,8 @@ li {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   justify-content: center;
-  min-height: 100vh;
   min-width: 40vw;
   position: relative;
 }
@@ -101,6 +100,7 @@ li {
   background-color: hsla(0, 0%, 0%, 0.5);
   display: flex;
   justify-content: center;
+  padding: 1rem;
   position: absolute;
   top: 20%;
   width: 100%;
@@ -146,18 +146,25 @@ li {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   justify-content: center;
-  min-height: 100vh;
   width: 100%;
 }
 
 .form {
+  align-items: center;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: center;
+  overflow-y: scroll;
   width: 100%;
+}
+
+@media only screen and (max-height: 750px) {
+  .form {
+    justify-content: flex-start;
+  }
 }
 
 .form__header {
@@ -235,10 +242,10 @@ li {
   outline: none;
   padding-block: 0.5rem;
   padding-inline: 0.75rem;
+  width: 100%;
   transition:
     border-color var(--transition-delay),
     box-shadow var(--transition-delay);
-  width: 100%;
 }
 
 .form__input:focus {
