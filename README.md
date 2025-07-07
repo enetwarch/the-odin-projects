@@ -8,10 +8,10 @@ The goal of this repo is to strengthen my understanding of layout techniques, se
 
 Projects will be stored in the directory they are named after. The instructions and its original source will be written in a **README.md** file. Each HTML file will have their own CSS, an optional JavaScript file, and a markdown documentation for its instructions.
 
-- [`/landing-page`](./src/landing-page): A marketing-style landing page layout that emphasizes visual hierarchy, call-to-action areas, and structured sections.
-- [`/sign-up-form`](./src/sign-up-form): A modern user registration form inspired by real-world sign-up flows, focused on form validation and layout alignment.
-- [`/admin-dashboard`](./src/admin-dashboard): A responsive admin interface with grid-based layout, navigation sidebar, and dashboard widgets — great for practicing CSS Grid and layout nesting.
-- [`/home-page`](./src/home-page): A static homepage rebuild inspired by existing websites, useful for reinforcing typography, image usage, and general layout practices.
+- [`/landing-page`](./src/landing-page.html): A marketing-style landing page layout that emphasizes visual hierarchy, call-to-action areas, and structured sections.
+- [`/sign-up-form`](./src/sign-up-form.html): A modern user registration form inspired by real-world sign-up flows, focused on form validation and layout alignment.
+- [`/admin-dashboard`](./src/admin-dashboard.html): A responsive admin interface with grid-based layout, navigation sidebar, and dashboard widgets — great for practicing CSS Grid and layout nesting.
+- [`/home-page`](./src/home-page.html): A static homepage rebuild inspired by existing websites, useful for reinforcing typography, image usage, and general layout practices.
 
 ## Tech Stack
 
