@@ -1,5 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const formElement = document.getElementById("form");
+  console.log("Sign up form loaded!");
+
+  const formElement = document.getElementById("sign-up-form");
 
   formElement.addEventListener("submit", (event) => {
     event.preventDefault();
