@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
-  console.log("Sign up form loaded!");
-
   const formElement = document.getElementById("sign-up-form");
+  const passwordElement = document.getElementById("password");
+  const confirmPasswordElement = document.getElementById("confirm-password");
 
   formElement.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -10,6 +10,25 @@ window.addEventListener("DOMContentLoaded", () => {
     const password = formData.get("password");
     const confirmPassword = formData.get("confirm-password");
 
-    console.log(password, confirmPassword);
+    if (confirmPassword !== password) {
+      const message = "Passwords do not match";
+
+      passwordElement.setCustomValidity(message);
+      confirmPasswordElement.setCustomValidity(message);
+
+      const handleInput = (event) => {
+        passwordElement.setCustomValidity("");
+        confirmPasswordElement.setCustomValidity("");
+        event.target.removeEventListener("input", handleInput);
+      };
+
+      passwordElement.addEventListener("input", handleInput);
+      confirmPasswordElement.addEventListener("input", handleInput);
+
+      formElement.reportValidity();
+    } else {
+      passwordElement.setCustomValidity("");
+      confirmPasswordElement.setCustomValidity("");
+    }
   });
 });
