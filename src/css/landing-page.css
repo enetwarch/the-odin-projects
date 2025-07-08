@@ -19,7 +19,7 @@
   padding: 0;
 }
 
-body {
+body[data-page="landing-page"] {
   align-items: center;
   background-color: var(--color-background);
   color: var(--color-foreground);
