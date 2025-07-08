@@ -248,13 +248,13 @@ li {
     box-shadow var(--transition-delay);
 }
 
+.form__input:invalid {
+  border-color: var(--color-error);
+}
+
 .form__input:focus {
   border-color: var(--color-information);
   box-shadow: 3px 3px 12px var(--color-shadow);
-}
-
-.form[data-submit="true"] .form__input:invalid {
-  border-color: var(--color-error);
 }
 
 .form__footer {

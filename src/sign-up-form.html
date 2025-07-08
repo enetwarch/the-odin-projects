@@ -44,7 +44,7 @@
       </footer>
     </aside>
     <main class="main">
-      <form id="sign-up-form" class="form" data-submit="false">
+      <form id="sign-up-form" class="form">
         <header class="form__header">
           <div class="form__header-container">
             <p class="form__header-text">
@@ -72,15 +72,38 @@
             </div>
             <div class="form__field">
               <label class="form__label" for="phone-number">PHONE NUMBER</label>
-              <input id="phone-number" class="form__input" name="phone-number" type="tel" required />
+              <input
+                id="phone-number"
+                class="form__input"
+                name="phone-number"
+                type="tel"
+                pattern="\+?[0-9\s\-\(\).]{7,}"
+                required
+              />
             </div>
             <div class="form__field">
               <label class="form__label" for="password">PASSWORD</label>
-              <input id="password" class="form__input" name="password" type="password" required />
+              <input
+                id="password"
+                class="form__input"
+                name="password"
+                type="password"
+                minlength="8"
+                maxlength="100"
+                required
+              />
             </div>
             <div class="form__field">
               <label class="form__label" for="confirm-password">CONFIRM PASSWORD</label>
-              <input id="confirm-password" class="form__input" name="confirm-password" type="password" required />
+              <input
+                id="confirm-password"
+                class="form__input"
+                name="confirm-password"
+                minlength="8"
+                maxlength="100"
+                type="password"
+                required
+              />
             </div>
           </div>
         </fieldset>
