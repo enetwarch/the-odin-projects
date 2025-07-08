@@ -124,125 +124,26 @@
     <main class="main">
       <section class="projects">
         <h2 class="projects__heading">Your Projects</h2>
-        <ul class="projects__list">
-          <li class="projects__list-item">
-            <article class="project">
-              <h3 class="project__title">Super Cool Projects</h3>
-              <p class="project__description">
-                Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.
-              </p>
-              <section class="project__action" aria-label="Project Actions">
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-star" aria-label="Star"></i>
-                </button>
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-eye" aria-label="View"></i>
-                </button>
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-share" aria-label="Share"></i>
-                </button>
-              </section>
-            </article>
-          </li>
-          <li class="projects__list-item">
-            <article class="project">
-              <h3 class="project__title">Less Cool Project</h3>
-              <p class="project__description">
-                Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien
-                et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.
-              </p>
-              <section class="project__action" aria-label="Project Actions">
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-star" aria-label="Star"></i>
-                </button>
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-eye" aria-label="View"></i>
-                </button>
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-share" aria-label="Share"></i>
-                </button>
-              </section>
-            </article>
-          </li>
-          <li class="projects__list-item">
-            <article class="project">
-              <h3 class="project__title">Impossible App</h3>
-              <p class="project__description">
-                In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.
-              </p>
-              <section class="project__action" aria-label="Project Actions">
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-star" aria-label="Star"></i>
-                </button>
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-eye" aria-label="View"></i>
-                </button>
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-share" aria-label="Share"></i>
-                </button>
-              </section>
-            </article>
-          </li>
-          <li class="projects__list-item">
-            <article class="project">
-              <h3 class="project__title">Easy Peasy App</h3>
-              <p class="project__description">
-                Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur
-                dignissim nisi in tortor commodo, ac bibendum magna tincidunt.
-              </p>
-              <section class="project__action" aria-label="Project Actions">
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-star" aria-label="Star"></i>
-                </button>
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-eye" aria-label="View"></i>
-                </button>
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-share" aria-label="Share"></i>
-                </button>
-              </section>
-            </article>
-          </li>
-          <li class="projects__list-item">
-            <article class="project">
-              <h3 class="project__title">Ad Blocker</h3>
-              <p class="project__description">
-                Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed
-                malesuada eros.
-              </p>
-              <section class="project__action" aria-label="Project Actions">
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-star" aria-label="Star"></i>
-                </button>
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-eye" aria-label="View"></i>
-                </button>
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-share" aria-label="Share"></i>
-                </button>
-              </section>
-            </article>
-          </li>
-          <li class="projects__list-item">
-            <article class="project">
-              <h3 class="project__title">Money Maker</h3>
-              <p class="project__description">
-                Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus
-                sit amet ex. Pellentesque mollis nec sem vel aliquam.
-              </p>
-              <section class="project__action" aria-label="Project Actions">
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-star" aria-label="Star"></i>
-                </button>
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-eye" aria-label="View"></i>
-                </button>
-                <button class="project__action-button" type="button">
-                  <i class="project__action-icon fa-solid fa-share" aria-label="Share"></i>
-                </button>
-              </section>
-            </article>
-          </li>
+        <ul id="project-list" class="projects__list">
+          <template id="project-template">
+            <li class="projects__list-item">
+              <article class="project">
+                <h3 class="project__title"></h3>
+                <p class="project__description"></p>
+                <section class="project__action" aria-label="Project Actions">
+                  <button class="project__action-button" type="button">
+                    <i class="project__action-icon fa-solid fa-star" aria-label="Star"></i>
+                  </button>
+                  <button class="project__action-button" type="button">
+                    <i class="project__action-icon fa-solid fa-eye" aria-label="View"></i>
+                  </button>
+                  <button class="project__action-button" type="button">
+                    <i class="project__action-icon fa-solid fa-share" aria-label="Share"></i>
+                  </button>
+                </section>
+              </article>
+            </li>
+          </template>
         </ul>
       </section>
       <aside class="main__aside">
